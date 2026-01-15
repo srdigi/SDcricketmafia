@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SD CRICKET MAFIYA™🔥</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body{
+min-height:100vh;
+background:
+linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.9)),
+url('https://images.unsplash.com/photo-1521412644187-c49fa049e84d');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+color:#fff;
+text-align:center;
+}
+
+.container{
+width:100%;
+max-width:420px;
+padding:20px;
+}
+
+.logo{
+width:110px;
+height:110px;
+border-radius:50%;
+margin:0 auto 15px;
+border:3px solid #ff0000;
+background:url('https://cdn-icons-png.flaticon.com/512/861/861512.png') center/cover;
+}
+
+h1{
+font-size:28px;
+margin-bottom:10px;
+font-weight:800;
+}
+
+.counter{
+font-size:48px;
+color:#ff0000;
+font-weight:900;
+margin:10px 0;
+}
+
+.points{
+text-align:left;
+margin:20px auto;
+font-size:16px;
+}
+
+.points p{
+margin:10px 0;
+}
+
+.points span{
+color:#00ff6a;
+font-weight:bold;
+}
+
+.btn{
+margin-top:25px;
+}
+
+button{
+width:100%;
+padding:15px;
+font-size:20px;
+font-weight:800;
+color:#fff;
+background:#ff0000;
+border:none;
+border-radius:12px;
+cursor:pointer;
+animation:pulse 1.5s infinite;
+}
+
+button:disabled{
+background:#888;
+cursor:not-allowed;
+animation:none;
+}
+
+@keyframes pulse{
+0%{transform:scale(1);}
+50%{transform:scale(1.05);}
+100%{transform:scale(1);}
+}
+
+.footer{
+margin-top:20px;
+font-size:14px;
+opacity:0.9;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="logo"></div>
+
+<h1>SD CRICKET MAFIYA™🔥</h1>
+
+<div class="counter" id="timer">45</div>
+
+<div class="points">
+<p>✅ <span>90%+</span> Match Accuracy</p>
+<p>🏆 Trusted Cricket Analysis</p>
+<p>🔥 Daily Match & Toss Reports</p>
+</div>
+
+<div class="btn">
+<button id="joinBtn" onclick="joinNow()">JOIN TELEGRAM</button>
+</div>
+
+<div class="footer">
+FREE JOINING ENDS SOON
+</div>
+
+</div>
+
+<script>
+let time = 45;
+let clicked = false;
+
+const timer = document.getElementById("timer");
+const btn = document.getElementById("joinBtn");
+
+setInterval(()=>{
+if(time>0){
+time--;
+timer.innerText = time;
+}
+},1000);
+
+function joinNow(){
+if(clicked) return; // fake click protection
+clicked = true;
+btn.disabled = true;
+window.location.href = "https://t.me/+F-VUVtU5MyI4NDA1";
+}
+</script>
+
+</body>
+</html>
