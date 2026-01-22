@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MAFIYA DUBAI™ ❤️</title>
 
-<!-- META PIXEL : CLEAN & SAFE -->
+<!-- META PIXEL (PERMANENT SAFE) -->
 <script>
 !function(f,b,e,v,n,t,s){
 if(f.fbq)return;
 n=f.fbq=function(){
-n.callMethod ?
+n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};
 if(!f._fbq)f._fbq=n;
 n.push=n;n.loaded=!0;n.version='2.0';
@@ -21,103 +18,99 @@ s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)
 }(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
 
-/* INIT PIXEL */
-fbq('init','3814122625555826');
+fbq('init','1649174012926724');
 
-/* ONLY PAGE VIEW */
+/* ✅ ONLY PAGE VIEW ON LOAD */
 fbq('track','PageView');
 </script>
 <!-- END META PIXEL -->
 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SD CRICKET MAFIYA™🔥</title>
+
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Segoe UI,Arial}
 body{
 min-height:100vh;
-background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.85)),
-url('https://images.unsplash.com/photo-1505666287593-28dbe0f7a7b2');
+background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.9)),
+url('https://images.unsplash.com/photo-1521412644187-c49fa049e84d');
 background-size:cover;
 background-position:center;
-color:#fff;
 display:flex;
-justify-content:center;
 align-items:center;
+justify-content:center;
+color:#fff;
+text-align:center;
 }
-.container{max-width:420px;width:100%;padding:22px 16px;text-align:center}
+.container{max-width:420px;padding:20px}
 .logo{
-width:110px;height:110px;margin:0 auto 8px;
-border-radius:50%;border:3px solid #ff0055;overflow:hidden;
+width:110px;height:110px;border-radius:50%;
+margin:0 auto 15px;border:3px solid red;
+background:url('https://cdn-icons-png.flaticon.com/512/861/861512.png') center/cover;
 }
-.logo img{width:100%;height:100%;object-fit:cover}
-.username{font-size:17px;font-weight:800;margin-bottom:12px}
-h1{font-size:26px;font-weight:900;color:#ff0055;margin-bottom:6px}
-.subs{font-size:17px;font-weight:700;margin-bottom:18px}
-.info{font-size:17px;line-height:1.7;margin-bottom:18px}
-.info span{color:#00ffcc;font-weight:800}
-.join-text{font-size:21px;font-weight:900;color:#00ff00;margin:16px 0 10px}
-.telegram-btn{
-display:block;width:100%;max-width:360px;margin:0 auto;
-background:#00c6ff;color:#000;text-decoration:none;
-padding:16px;font-size:18px;font-weight:900;
-border-radius:10px;cursor:pointer;
+h1{font-size:28px;font-weight:800}
+.counter{font-size:48px;color:red;font-weight:900;margin:10px 0}
+.points{text-align:left;margin:20px 0}
+.points p{margin:10px 0}
+.points span{color:#00ff6a;font-weight:700}
+button{
+width:100%;padding:15px;font-size:20px;font-weight:800;
+background:red;color:#fff;border:none;border-radius:12px;
+cursor:pointer;animation:pulse 1.5s infinite
 }
-.telegram-btn:active{transform:scale(.97)}
-.money{font-size:17px;font-weight:800;margin-top:12px}
-.disclaimer{font-size:11px;opacity:.7;margin-top:18px;line-height:1.5}
+button:disabled{background:#777;animation:none}
+@keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.05)}100%{transform:scale(1)}}
+.footer{margin-top:20px;font-size:14px;opacity:.9}
 </style>
 </head>
 
 <body>
-
 <div class="container">
 
-<div class="logo">
-<img src="logo.png" alt="MAFIYA DUBAI Logo">
+<div class="logo"></div>
+<h1>SD CRICKET MAFIYA™🔥</h1>
+
+<div class="counter" id="timer">45</div>
+
+<div class="points">
+<p>✅ <span>90%+</span> Match Accuracy</p>
+<p>🏆 Trusted Cricket Analysis</p>
+<p>🔥 Daily Match & Toss Reports</p>
 </div>
 
-<div class="username">@KhushiExpartp09</div>
-<h1>MAFIYA DUBAI™ ❤️</h1>
-<div class="subs">🔥 78,098 Subscribers 🔥</div>
+<button id="joinBtn">JOIN TELEGRAM</button>
 
-<div class="info">
-⚡ <span>Premium Telegram Community</span><br>
-⚡ <span>Daily Updates</span><br>
-⚡ <span>Trusted Channel</span>
-</div>
-
-<div class="join-text">FREE TELEGRAM SUBSCRIBE</div>
-
-<a href="#" class="telegram-btn" id="joinBtn">
-🚀 SUBSCRIBE MY FREE TELEGRAM
-</a>
-
-<div class="money">💰 Time Hai Lakho Kamane Ka 💰</div>
-
-<div class="disclaimer">
-Disclaimer: This channel is for entertainment purposes only.
-Not for any illegal activities. Not financial advice.
-</div>
+<div class="footer">FREE JOINING ENDS SOON</div>
 
 </div>
 
 <script>
-let fired = false;
+let time = 45;
+let subscribed = false;
+
+const timer = document.getElementById("timer");
 const btn = document.getElementById("joinBtn");
 
-btn.addEventListener("click",function(e){
-e.preventDefault();
-if(fired) return;
-fired = true;
+setInterval(()=>{
+if(time>0){timer.innerText = --time;}
+},1000);
 
-/* ✅ ONLY ONE SUBSCRIBE EVENT — VALID FORMAT */
+btn.addEventListener("click",function(){
+if(subscribed) return;
+subscribed = true;
+btn.disabled = true;
+
+/* 🔥 SAFE SUBSCRIBE EVENT (NO ERROR EVER) */
 fbq('track','Subscribe',{
-  value: 1,
-  currency: 'INR'
+value: 1.00,
+currency: 'INR'
 });
 
-/* Redirect after pixel fire */
-setTimeout(function(){
-  window.location.href = "https://t.me/+Ef0dY95lSEphZTQ1";
-},400);
+/* Small delay so pixel fires properly */
+setTimeout(()=>{
+window.location.href="https://t.me/+F-VUVtU5MyI4NDA1";
+},300);
 });
 </script>
 
