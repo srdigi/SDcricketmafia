@@ -1,38 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><!-- Meta Pixel Code -->
+<head>
+
+<!-- META PIXEL (PERMANENT SAFE) -->
 <script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+!function(f,b,e,v,n,t,s){
+if(f.fbq)return;
+n=f.fbq=function(){
+n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1649174012926724');
-fbq('track', 'PageView');
+if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];
+t=b.createElement(e);t.async=!0;
+t.src=v;
+s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)
+}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init','1649174012926724');
+
+/* ✅ ONLY PAGE VIEW ON LOAD */
+fbq('track','PageView');
 </script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1649174012926724&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+<!-- END META PIXEL -->
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SD CRICKET MAFIYA™🔥</title>
 
 <style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family: 'Segoe UI', Arial, sans-serif;
-}
-
+*{margin:0;padding:0;box-sizing:border-box;font-family:Segoe UI,Arial}
 body{
 min-height:100vh;
-background:
-linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.9)),
+background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.9)),
 url('https://images.unsplash.com/photo-1521412644187-c49fa049e84d');
 background-size:cover;
 background-position:center;
@@ -42,93 +43,32 @@ justify-content:center;
 color:#fff;
 text-align:center;
 }
-
-.container{
-width:100%;
-max-width:420px;
-padding:20px;
-}
-
+.container{max-width:420px;padding:20px}
 .logo{
-width:110px;
-height:110px;
-border-radius:50%;
-margin:0 auto 15px;
-border:3px solid #ff0000;
+width:110px;height:110px;border-radius:50%;
+margin:0 auto 15px;border:3px solid red;
 background:url('https://cdn-icons-png.flaticon.com/512/861/861512.png') center/cover;
 }
-
-h1{
-font-size:28px;
-margin-bottom:10px;
-font-weight:800;
-}
-
-.counter{
-font-size:48px;
-color:#ff0000;
-font-weight:900;
-margin:10px 0;
-}
-
-.points{
-text-align:left;
-margin:20px auto;
-font-size:16px;
-}
-
-.points p{
-margin:10px 0;
-}
-
-.points span{
-color:#00ff6a;
-font-weight:bold;
-}
-
-.btn{
-margin-top:25px;
-}
-
+h1{font-size:28px;font-weight:800}
+.counter{font-size:48px;color:red;font-weight:900;margin:10px 0}
+.points{text-align:left;margin:20px 0}
+.points p{margin:10px 0}
+.points span{color:#00ff6a;font-weight:700}
 button{
-width:100%;
-padding:15px;
-font-size:20px;
-font-weight:800;
-color:#fff;
-background:#ff0000;
-border:none;
-border-radius:12px;
-cursor:pointer;
-animation:pulse 1.5s infinite;
+width:100%;padding:15px;font-size:20px;font-weight:800;
+background:red;color:#fff;border:none;border-radius:12px;
+cursor:pointer;animation:pulse 1.5s infinite
 }
-
-button:disabled{
-background:#888;
-cursor:not-allowed;
-animation:none;
-}
-
-@keyframes pulse{
-0%{transform:scale(1);}
-50%{transform:scale(1.05);}
-100%{transform:scale(1);}
-}
-
-.footer{
-margin-top:20px;
-font-size:14px;
-opacity:0.9;
-}
+button:disabled{background:#777;animation:none}
+@keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.05)}100%{transform:scale(1)}}
+.footer{margin-top:20px;font-size:14px;opacity:.9}
 </style>
 </head>
 
 <body>
-
 <div class="container">
 
 <div class="logo"></div>
-
 <h1>SD CRICKET MAFIYA™🔥</h1>
 
 <div class="counter" id="timer">45</div>
@@ -139,36 +79,39 @@ opacity:0.9;
 <p>🔥 Daily Match & Toss Reports</p>
 </div>
 
-<div class="btn">
-<button id="joinBtn" onclick="joinNow()">JOIN TELEGRAM</button>
-</div>
+<button id="joinBtn">JOIN TELEGRAM</button>
 
-<div class="footer">
-FREE JOINING ENDS SOON
-</div>
+<div class="footer">FREE JOINING ENDS SOON</div>
 
 </div>
 
 <script>
 let time = 45;
-let clicked = false;
+let subscribed = false;
 
 const timer = document.getElementById("timer");
 const btn = document.getElementById("joinBtn");
 
 setInterval(()=>{
-if(time>0){
-time--;
-timer.innerText = time;
-}
+if(time>0){timer.innerText = --time;}
 },1000);
 
-function joinNow(){
-if(clicked) return; // fake click protection
-clicked = true;
+btn.addEventListener("click",function(){
+if(subscribed) return;
+subscribed = true;
 btn.disabled = true;
-window.location.href = "https://t.me/+F-VUVtU5MyI4NDA1";
-}
+
+/* 🔥 SAFE SUBSCRIBE EVENT (NO ERROR EVER) */
+fbq('track','Subscribe',{
+value: 1.00,
+currency: 'INR'
+});
+
+/* Small delay so pixel fires properly */
+setTimeout(()=>{
+window.location.href="https://t.me/+F-VUVtU5MyI4NDA1";
+},300);
+});
 </script>
 
 </body>
