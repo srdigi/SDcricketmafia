@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SD CRICKET MAFIYA™🔥</title>
 
-<!-- META PIXEL (PERMANENT SAFE) -->
+<!-- META PIXEL – FINAL SAFE (NO VALUE / NO CURRENCY) -->
 <script>
 !function(f,b,e,v,n,t,s){
 if(f.fbq)return;
@@ -19,15 +22,9 @@ s.parentNode.insertBefore(t,s)
 }(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
 
 fbq('init','1649174012926724');
-
-/* ✅ ONLY PAGE VIEW ON LOAD */
 fbq('track','PageView');
 </script>
 <!-- END META PIXEL -->
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SD CRICKET MAFIYA™🔥</title>
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:Segoe UI,Arial}
@@ -35,13 +32,9 @@ body{
 min-height:100vh;
 background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.9)),
 url('https://images.unsplash.com/photo-1521412644187-c49fa049e84d');
-background-size:cover;
-background-position:center;
-display:flex;
-align-items:center;
-justify-content:center;
-color:#fff;
-text-align:center;
+background-size:cover;background-position:center;
+display:flex;align-items:center;justify-content:center;
+color:#fff;text-align:center;
 }
 .container{max-width:420px;padding:20px}
 .logo{
@@ -60,17 +53,21 @@ background:red;color:#fff;border:none;border-radius:12px;
 cursor:pointer;animation:pulse 1.5s infinite
 }
 button:disabled{background:#777;animation:none}
-@keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.05)}100%{transform:scale(1)}}
+@keyframes pulse{
+0%{transform:scale(1)}
+50%{transform:scale(1.05)}
+100%{transform:scale(1)}
+}
 .footer{margin-top:20px;font-size:14px;opacity:.9}
 </style>
 </head>
 
 <body>
+
 <div class="container">
-
 <div class="logo"></div>
-<h1>SD CRICKET MAFIYA™🔥</h1>
 
+<h1>SD CRICKET MAFIYA™🔥</h1>
 <div class="counter" id="timer">45</div>
 
 <div class="points">
@@ -80,37 +77,32 @@ button:disabled{background:#777;animation:none}
 </div>
 
 <button id="joinBtn">JOIN TELEGRAM</button>
-
 <div class="footer">FREE JOINING ENDS SOON</div>
-
 </div>
 
+<!-- FINAL SAFE CLICK TRACKING -->
 <script>
 let time = 45;
-let subscribed = false;
+let clicked = false;
 
 const timer = document.getElementById("timer");
 const btn = document.getElementById("joinBtn");
 
 setInterval(()=>{
-if(time>0){timer.innerText = --time;}
+  if(time>0) timer.innerText = --time;
 },1000);
 
 btn.addEventListener("click",function(){
-if(subscribed) return;
-subscribed = true;
-btn.disabled = true;
+  if(clicked) return;
+  clicked = true;
+  btn.disabled = true;
 
-/* 🔥 SAFE SUBSCRIBE EVENT (NO ERROR EVER) */
-fbq('track','Subscribe',{
-value: 1.00,
-currency: 'INR'
-});
+  // ✅ SAFE CUSTOM EVENT (NO VALUE / NO CURRENCY)
+  fbq('trackCustom','TelegramJoinClick');
 
-/* Small delay so pixel fires properly */
-setTimeout(()=>{
-window.location.href="https://t.me/+F-VUVtU5MyI4NDA1";
-},300);
+  setTimeout(()=>{
+    window.location.href="https://t.me/+F-VUVtU5MyI4NDA1";
+  },300);
 });
 </script>
 
